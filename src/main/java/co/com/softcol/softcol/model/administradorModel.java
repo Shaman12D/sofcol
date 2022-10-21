@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 
 @Entity
-@Table(name="administrador")
+@Table(name="administradores")
 public class administradorModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -20,7 +20,7 @@ import lombok.Setter;
 @Setter
 
 @Entity
-@Table(name="paciente")
+@Table(name="pacientes")
 public class pacienteModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
