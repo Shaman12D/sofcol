@@ -1,7 +1,7 @@
 package co.com.softcol.softcol.model;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
+import java.util.TimeZone;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -25,11 +25,11 @@ public class citasModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
-    private int id;
+    private int idcitas;
     private int paciente;
-    private int medico;
+    private int médico;
     private int tipo;
     private Date fecha;
-    private Time hora;
+    private TimeZone hora;
     private String Estado;
 }

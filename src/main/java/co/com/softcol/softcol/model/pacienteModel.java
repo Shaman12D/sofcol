@@ -1,7 +1,7 @@
 package co.com.softcol.softcol.model;
 
 import java.math.BigInteger;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -29,7 +29,7 @@ public class pacienteModel {
     private BigInteger cedula;
     private String nombres;
     private String apellidos;
-    private Date fechaNacimiento;
+    private Date fechanacimiento;
     private BigInteger teléfono;
     private String dirección;
     private String estado;
