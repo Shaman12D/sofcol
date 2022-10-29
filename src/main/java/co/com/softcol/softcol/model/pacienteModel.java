@@ -1,7 +1,7 @@
 package co.com.softcol.softcol.model;
 
 import java.math.BigInteger;
-import java.util.Date;
+import java.sql.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

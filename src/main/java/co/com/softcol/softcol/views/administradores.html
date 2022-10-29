@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administradores</title>
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #457b9d;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">Softcol</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="administradores.html">Administradores</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!--Tabla-->
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nombres</th>
+              <th scope="col">Apellidos</th>
+              <th scope="col">Telefono</th>
+              <th scope="col">Direccion</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="contenidoAdmin">
+                          
+          </tbody>
+        </table>
+        <div class="col-3">
+          <div class="mb-3">
+              <h3>Registrar Administrador</h3>
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" id="Id" rows="3" style="display: none;">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" id="Nombres" rows="3" placeholder="Nombres">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" id="Apellidos" rows="3" placeholder="Apellidos">
+          </div>
+          <div class="mb-3">
+              <input type="number" class="form-control" id="Teléfono" rows="3" placeholder="Teléfono">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" id="Dirección" rows="3" placeholder="Dirección">
+          </div>
+          <div class="mb-3">
+              <input type="text" class="form-control" id="Usuario" rows="3" placeholder="Usuario">
+          </div>
+          <div class="mb-3">
+              <input type="password" class="form-control" id="Contraseña" placeholder="Contraseña">
+          </div>
+          <div  class="mb-3">
+              <button type="button" class="btn btn-success" onclick="guardarAdmin()">Success</button>
+          </div>
+      </div>
+    </div>
+</div>
+<script src="JavaScript/admin.js"></script>
+<script src="JavaScript/bootstrap.bundle.min.js"></script>
+</body>
+</html>
